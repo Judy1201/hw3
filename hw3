@@ -1,0 +1,51 @@
+weight=5 #weight是體重
+emotion=0 #emotion是心情
+IQ=100 #IQ是智商
+import random
+while 0==0 :
+    x=random.randint(1,4)
+    if x == 1:
+        weight += 1
+        print('Sandy eats something and weight is'+str(weight))
+    elif x==2:
+        emotion += 1
+        print('Sandy plays and emotion is'+str(emotion))
+    else:
+        IQ += 1
+        print('Sandy is trained and IQ is'+str(IQ))
+    if weight>7:
+        print('Sandy is overweight')
+    if emotion>3:
+        print('Sandy is very happy')
+    if IQ>130:
+        print('Sandy is smart')
+
+    a = int(input('recall Sandy if you want Sandy to eat somthing code 4, if you want to play with Sandy code 5,if you want to train Sandy code 6,if you want Sandy to go to exercise code 7,if you want to Sandy code 8'))
+
+    if a==4:
+        weight += 1
+        print('Sandy eats something and weight is'+str(weight))
+    elif a==5:
+        emotion += 1
+        print('Sandy plays and emotion is'+str(emotion))
+    elif a==6:
+        IQ += 1
+        print('Sandy is trained and IQ is'+str(IQ))
+    elif a==7:
+        weight -= 2
+        print('Sandy exercises and weight is'+str(weight))
+    elif a==8:
+        emotion -=2
+        print('Sandy is hit and emotion is'+str(emotion))
+
+    if weight>7:
+        print('Sandy is overweight')
+    if emotion>3:
+        print('Sandy is very happy')
+    if IQ>130:
+        print('Sandy is smart')
+    if weight<3:
+        print('Sandy is too light')
+    if emotion< (-2):
+        print('Sandy is unhappy') 
+    
